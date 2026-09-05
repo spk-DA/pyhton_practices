@@ -134,3 +134,192 @@ elif symbol == "/":
 
 else:
     print("Symbol is not valid")
+    
+# ============================================================
+#                  MENU-DRIVEN QUESTIONS
+# ============================================================
+
+
+# 11. Create a menu-driven program to perform the following operations:
+# 1 → Addition
+# 2 → Subtraction
+# 3 → Multiplication
+# 4 → Division
+
+print("1 → Addition")
+print("2 → Subtraction")
+print("3 → Multiplication")
+print("4 → Division")
+
+choice = int(input("Enter your choice: "))
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+if choice == 1:
+    print("Addition:", a + b)
+
+elif choice == 2:
+    print("Subtraction:", a - b)
+
+elif choice == 3:
+    print("Multiplication:", a * b)
+
+elif choice == 4:
+    if b != 0:
+        print("Division:", a / b)
+    else:
+        print("Cannot divide by zero")
+
+else:
+    print("Invalid choice")
+
+
+# 12. Create a menu-driven program for a student:
+# 1 → Display Student Name
+# 2 → Display Student Marks
+# 3 → Display Student Grade
+
+student_name = input("Enter student name: ")
+marks = int(input("Enter student marks: "))
+
+print("1 → Display Student Name")
+print("2 → Display Student Marks")
+print("3 → Display Student Grade")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    print("Student Name:", student_name)
+
+elif choice == 2:
+    print("Student Marks:", marks)
+
+elif choice == 3:
+    if marks >= 80:
+        print("Grade: A")
+    elif marks >= 60:
+        print("Grade: B")
+    elif marks >= 40:
+        print("Grade: C")
+    else:
+        print("Grade: Fail")
+
+else:
+    print("Invalid choice")
+
+
+# 13. Create a menu-driven program for a basic banking system:
+# 1 → Check Balance
+# 2 → Deposit
+# 3 → Withdraw
+
+balance = 10000
+
+print("1 → Check Balance")
+print("2 → Deposit")
+print("3 → Withdraw")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    print("Current Balance:", balance)
+
+elif choice == 2:
+    deposit = float(input("Enter deposit amount: "))
+
+    if deposit > 0:
+        balance = balance + deposit
+        print("Deposit successful")
+        print("Current Balance:", balance)
+    else:
+        print("Invalid deposit amount")
+
+elif choice == 3:
+    withdraw = float(input("Enter withdrawal amount: "))
+
+    if withdraw <= 0:
+        print("Invalid withdrawal amount")
+    elif withdraw > balance:
+        print("Insufficient balance")
+    else:
+        balance = balance - withdraw
+        print("Withdrawal successful")
+        print("Current Balance:", balance)
+
+else:
+    print("Invalid choice")
+
+
+# 14. Create a menu-driven program to calculate:
+# 1 → Area of Rectangle
+# 2 → Area of Circle
+# 3 → Area of Square
+
+print("1 → Area of Rectangle")
+print("2 → Area of Circle")
+print("3 → Area of Square")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    length = float(input("Enter length: "))
+    width = float(input("Enter width: "))
+
+    area = length * width
+
+    print("Area of Rectangle:", area)
+
+elif choice == 2:
+    radius = float(input("Enter radius: "))
+
+    area = 3.14159 * radius * radius
+
+    print("Area of Circle:", area)
+
+elif choice == 3:
+    side = float(input("Enter side: "))
+
+    area = side * side
+
+    print("Area of Square:", area)
+
+else:
+    print("Invalid choice")
+
+
+# 15. Create a menu-driven program to convert:
+# 1 → Celsius to Fahrenheit
+# 2 → Fahrenheit to Celsius
+
+print("1 → Celsius to Fahrenheit")
+print("2 → Fahrenheit to Celsius")
+
+choice = int(input("Enter your choice: "))
+
+try:
+    temperature = float(input("Enter temperature: "))
+
+    if choice == 1:
+        fahrenheit = (temperature * 9 / 5) + 32
+        print("Temperature in Fahrenheit:", fahrenheit)
+
+    elif choice == 2:
+        celsius = (temperature - 32) * 5 / 9
+        print("Temperature in Celsius:", celsius)
+
+    else:
+        print("Input value is invalid")
+
+except ValueError:
+    print("Error: Please enter numbers only.")
+
+
+
+
+
+
+
+
+
+
