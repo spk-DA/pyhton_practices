@@ -1,0 +1,12 @@
+# 7. SETS
+
+# Create a set containing 5 numbers.
+
+# s={44,86,97,47,38}
+# # print(s)
+# # print(type(s))
+
+# # Add a new element using add().
+
+…only_class_1_shortcut = class_1 - class_2
+print("Students only in class 1 :", only_class_1_shortcut)
