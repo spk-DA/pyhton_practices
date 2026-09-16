@@ -1,0 +1,10 @@
+#  4. LISTS
+
+# Use the following list for Questions 1–10:
+#marks = [45, 67, 32, 89, 56, 28, 76, 91, 35, 62]
+
+# Find the length of the list
+# l=len(marks)
+# print("length of marks list is ",l)
+
+…
