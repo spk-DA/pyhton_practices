@@ -1,0 +1,19 @@
+#  DICTIONARIES
+
+# Use the following dictionary
+# student = {
+#     "name": "Rahul",
+#     "age": 20,
+#     "marks": 75,
+#     "city": "Delhi"
+# }
+
+…
+position = temperatures.index(highest_temp)
+
+
+hottest_city = city_names[position]
+
+print("City with the highest temperature:", hottest_city)
+print("Temperature:", highest_temp, "°C")
+
